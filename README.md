@@ -1,7 +1,7 @@
-# A PlanQK Demo Example using Gradio
+# A PLANQK Demo Example using Gradio
 
-This is an example of a PlanQK Demo created with [Gradio](https://www.gradio.app).
-The demo creates a web user interface to demonstrate the [Quantum Random Number Generator](https://platform.planqk.de/marketplace/apis/88b46e18-3d5f-4674-ba04-0d3416c0decd) published on the PlanQK Marketplace.
+This is an example of a PLANQK Demo created with [Gradio](https://www.gradio.app).
+The demo creates a web user interface to demonstrate the [Quantum Random Number Generator](https://platform.planqk.de/marketplace/apis/88b46e18-3d5f-4674-ba04-0d3416c0decd) published on the PLANQK Marketplace.
 
 ## Try it out
 
