@@ -1,17 +1,27 @@
-# A PLANQK Demo Example using Gradio
+# PLANQK Demo Starter using Gradio
 
-This is an example of a PLANQK Demo created with [Gradio](https://www.gradio.app).
-The demo creates a web user interface to demonstrate the [Quantum Random Number Generator](https://platform.planqk.de/marketplace/apis/88b46e18-3d5f-4674-ba04-0d3416c0decd) published on the PLANQK Marketplace.
+This is a simple example of a PLANQK Demo created with [Gradio](https://www.gradio.app).
 
-## Try it out
+The demo creates a web user interface for a service generating real random numbers.
+Users are able to request the amount of random numbers they want to generate.
 
-To run the demo subscribe to the [Quantum Random Number Generator](https://platform.planqk.de/marketplace/apis/88b46e18-3d5f-4674-ba04-0d3416c0decd) with an Application.
-Then add the credentials of your Application as environment variables.
+## Run it locally:
 
-Run it locally with:
+```bash
+uv venv
+uv sync
 
-```bash 
-conda env create -f environment.yml
-conda activate demo-starter-gradio
+source .venv/bin/activate
+
 gradio app.py
 ```
+
+## Run with Docker
+
+```bash
+docker build -t planqk-demo-starter-gradio .
+docker run -p 8080:8080 planqk-demo-starter-gradio
+```
+
+> PLANQK also uses the Dockerfile to build and run the container image.
+> Verifying that the Docker container runs correctly locally makes sure that it runs correctly on PLANQK ;-)
